@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internship Opportunities</title>
+</head>
+<body>
+    <h1>Internship Opportunities</h1>
+    <form action="/internship" method="post">
+        <label for="fullname">Full name:</label>
+        <input type="text" id="fullname" name="fullname" placeholder="Enter name">
+        <br>
+        <label for="email">University Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter email" required>
+        <br>
+        <label for="PhoneNo.">Phone Number:</label>
+        <input type="tel" id="PhoneNo." name="PhoneNo." placeholder="Enter phone number">
+        <br>
+        <label for="DOB">Date of Birth:</label>
+        <input type="date" id="DOB" name="DOB">
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter password">
+        <br>
+        <label for="gender">Gender:</label>
+        <input type="radio" id="Male" name="gender" value="Male" >
+        <label for="Male">Male</label>
+        <input type="radio" id="Female" name="gender" value="Female" >
+        <label for="Female">Female</label>
+        <br>
+        <label for=Select branch>Select branch:</label>
+        <select name="branch" id="Branch">
+            <option value="CSE">CSE</option>
+            <option value="ECE">ECE</option>
+            <option value="IT">IT</option>
+            <option value="Mechanical">Mechanical</option>
+        </select>
+        <br>
+        <label for="Skills">Skills:</label>
+        <br>
+        <input type="checkbox" id="Java" name="Skills" value="Java">
+        <label for="Java">Java</label>
+        <br>
+        <input type="checkbox" id="Python" name="Skills" value="Python">
+        <label for="Python">Python</label>
+        <br>
+        <input type="checkbox" id="javascript" name="Skills" value="JavaScript">
+        <label for="javascript">JavaScript</label>
+        <br>
+        <input type="checkbox" id="HTML" name="Skills" value="HTML">
+        <label for="HTML">HTML</label>
+        <br>
+        <input type="checkbox" id="CSS" name="Skills" value="CSS">
+        <label for="CSS">CSS</label>
+        <br>
+        <input type="checkbox" id="React" name="Skills" value="React">
+        <label for="React">React</label>
+        <br>
+        <label for="Intership preferances">Internship Preferences:</label>
+        <br>
+        <input type="radio" id="Prefer" name="Intership preferances" value="Prefer">
+        <label for="Prefer">Prefer</label>
+        <input type="radio" id="Not Prefer" name="Intership preferances" value="Not Prefer">
+        <label for="Not Prefer">Not Prefer</label>
+        <br>
+        <label for="Resume">Upload Resume</label>
+        <input type="file" id="Resume" name="Resume" accept=".pdf">
+        <br>
+        <label for="coverletter">Cover Letter:</label><br>
+        <textarea id="coverletter" name="coverletter" rows="5" cols="30"
+        placeholder="Write your cover letter here..."></textarea>
+        <br>
+        <button type="submit">Submit</button>
+        <br>
+        <button type="reset">Reset</button>
+    </form>
+</body>
+</html>

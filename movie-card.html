@@ -18,6 +18,7 @@
             font-family: sans-serif;
             background-color: #eae5ff;
             padding: 0 40px 40px;
+            overflow-x: hidden;
         }
 
 
@@ -428,86 +429,96 @@
             }
 
         }
-        @media (max-width: 700px) {
 
-    body {
-        padding: 0 12px 25px;
-        overflow-x: hidden;
-    }
 
-    header {
-        height: auto;
-        min-height: 70px;
-        padding: 12px;
-        flex-wrap: wrap;
-        gap: 12px;
-        margin-bottom: 25px;
-    }
+        /* ================= TABLET ================= */
 
-    .header-left {
-        gap: 10px;
-    }
+        @media (max-width: 768px) {
 
-    .logo img {
-        width: 80px;
-    }
+            .cards-container {
+                grid-template-columns: repeat(2, 230px);
+            }
 
-    .location {
-        padding-left: 10px;
-    }
+        }
 
-    .location strong {
-        font-size: 12px;
-    }
 
-    .location small {
-        font-size: 10px;
-    }
+        /* ================= PHONE ================= */
 
-    .nav-links {
-        width: 100%;
-        order: 3;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 4px;
-    }
+        @media (max-width: 460px) {
 
-    .nav-links a {
-        font-size: 11px;
-        padding: 7px 9px;
-    }
+            body {
+                padding: 0 10px 25px;
+                overflow-x: hidden;
+            }
 
-    .header-right {
-        margin-left: auto;
-        gap: 10px;
-    }
 
-    .search {
-        font-size: 23px;
-    }
+            .header {
+                height: 60px;
 
-    .profile {
-        width: 32px;
-        height: 32px;
-    }
+                padding: 0 15px;
 
-    .cards-container {
-        grid-template-columns: 1fr;
-        justify-items: center;
-        gap: 25px;
-    }
+                justify-content: space-between;
 
-    .movie-card {
-        width: 230px;
-    }
+                margin-bottom: 25px;
+            }
 
-    .notification {
-        top: 10px;
-        right: 10px;
-        padding: 10px 14px;
-        font-size: 12px;
-    }
-}
+
+            .logo img {
+                width: 85px;
+            }
+
+
+            .nav-links {
+                display: none;
+            }
+
+
+            .location {
+                display: none;
+            }
+
+
+            .header-right {
+                gap: 10px;
+            }
+
+
+            .search {
+                font-size: 23px;
+            }
+
+
+            .profile {
+                width: 32px;
+                height: 32px;
+            }
+
+
+            .cards-container {
+                grid-template-columns: 1fr;
+
+                justify-items: center;
+
+                gap: 25px;
+            }
+
+
+            .movie-card {
+                width: 230px;
+            }
+
+
+            .notification {
+                top: 10px;
+
+                right: 10px;
+
+                padding: 10px 14px;
+
+                font-size: 12px;
+            }
+
+        }
 
     </style>
 
@@ -527,7 +538,7 @@
 
                 <img
                     src="https://b.zmtcdn.com/data/edition_assets/17466982242413.svg"
-                    alt="logo"
+                    alt="Zomato logo"
                 >
 
             </div>
@@ -584,12 +595,13 @@
     </header>
 
 
+
     <!-- ================= MOVIE CARDS ================= -->
 
     <div class="cards-container">
 
 
-        <!-- CARD 1 -->
+        <!-- ================= CARD 1 ================= -->
 
         <div class="movie-card">
 
@@ -609,11 +621,13 @@
                     Mirzapur: The Movie
                 </h3>
 
+
                 <div class="tooltip-container">
 
                     <span class="movie-details">
                         ⭐ 8.5 | A | Hindi
                     </span>
+
 
                     <span class="tooltip">
                         Rating based on user reviews
@@ -632,7 +646,7 @@
 
 
 
-        <!-- CARD 2 -->
+        <!-- ================= CARD 2 ================= -->
 
         <div class="movie-card">
 
@@ -652,12 +666,14 @@
                     Hanuman
                 </h3>
 
+
                 <div class="tooltip-container">
 
                     <span class="movie-details">
                         ⭐ 9.0 | U | Hindi
                     </span>
 
+
                     <span class="tooltip">
                         Rating based on user reviews
                     </span>
@@ -675,7 +691,7 @@
 
 
 
-        <!-- CARD 3 -->
+        <!-- ================= CARD 3 ================= -->
 
         <div class="movie-card">
 
@@ -695,11 +711,13 @@
                     Mirzapur
                 </h3>
 
+
                 <div class="tooltip-container">
 
                     <span class="movie-details">
                         ⭐ 8.5 | A | Hindi
                     </span>
+
 
                     <span class="tooltip">
                         Rating based on user reviews
@@ -718,7 +736,7 @@
 
 
 
-        <!-- CARD 4 -->
+        <!-- ================= CARD 4 ================= -->
 
         <div class="movie-card">
 
@@ -738,11 +756,13 @@
                     Mirzapur
                 </h3>
 
+
                 <div class="tooltip-container">
 
                     <span class="movie-details">
                         ⭐ 8.5 | A | Hindi
                     </span>
+
 
                     <span class="tooltip">
                         Rating based on user reviews
@@ -761,7 +781,7 @@
 
 
 
-        <!-- CARD 5 -->
+        <!-- ================= CARD 5 ================= -->
 
         <div class="movie-card">
 
@@ -781,11 +801,13 @@
                     Mirzapur
                 </h3>
 
+
                 <div class="tooltip-container">
 
                     <span class="movie-details">
                         ⭐ 8.5 | A | Hindi
                     </span>
+
 
                     <span class="tooltip">
                         Rating based on user reviews
@@ -804,7 +826,7 @@
 
 
 
-        <!-- CARD 6 -->
+        <!-- ================= CARD 6 ================= -->
 
         <div class="movie-card">
 
@@ -824,11 +846,13 @@
                     Mirzapur
                 </h3>
 
+
                 <div class="tooltip-container">
 
                     <span class="movie-details">
                         ⭐ 8.5 | A | Hindi
                     </span>
+
 
                     <span class="tooltip">
                         Rating based on user reviews
@@ -849,7 +873,8 @@
     </div>
 
 
-    <!-- BOOKING NOTIFICATION -->
+
+    <!-- ================= BOOKING NOTIFICATION ================= -->
 
     <div class="notification">
         ✓ Booking Confirmed!
